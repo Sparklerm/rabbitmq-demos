@@ -8,11 +8,8 @@ import org.springframework.stereotype.Component;
 public class HelloWorldConsumer {
 
     @RabbitListener(queues = RabbitHelloWorldConfig.QUEUE_NAME)
-//    public void receive(String msg) {
-//        System.out.println(RabbitHelloWorldConfig.QUEUE_NAME + " : " + msg);
-//    }
     public void receive(String msg) {
-        System.out.println("GYD : " + msg);
+        System.out.println(RabbitHelloWorldConfig.QUEUE_NAME + " : " + msg);
     }
 
 }

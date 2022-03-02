@@ -9,8 +9,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 public class RabbitHelloWorldConfig {
-//    public static final String QUEUE_NAME = "hello_world_queue";
-    public static final String QUEUE_NAME = "mengjiao";
+    public static final String QUEUE_NAME = "hello_world_queue";
 
     @Bean
     Queue helloWorldQueue() {
